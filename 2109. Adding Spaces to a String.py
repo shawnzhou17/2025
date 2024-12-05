@@ -1,4 +1,5 @@
 ##2109. Adding Spaces to a String
+# Visited on 2024-12-03
 # You are given a 0-indexed string s and a 0-indexed integer array spaces that describes the indices in the original string where spaces will be added. 
 # Each space should be inserted before the character at the given index.
 
@@ -61,4 +62,3 @@ print(Solution().addSpaces(s, spaces))  #Output: "i code in py thon"
 s = "spacing"
 spaces = [0,1,2,3,4,5,6]
 print(Solution().addSpaces(s, spaces))  #Output: " s p a c i n g"
-    
