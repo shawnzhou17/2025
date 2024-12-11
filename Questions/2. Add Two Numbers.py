@@ -30,3 +30,60 @@
 # The number of nodes in each linked list is in the range [1, 100].
 # 0 <= Node.val <= 9
 # It is guaranteed that the list represents a number that does not have leading zeros.
+
+# Definition for singly-linked list.
+from typing import Optional
+
+
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+class Node:
+    def __init__(self, val=0):
+        self.val = val
+        self.next = None
+class Solution:
+    @staticmethod
+    def createLinkedList(arr):
+        if not arr:
+            return None
+
+        head = Node(arr[0])
+        current = head
+        for i in range(1, len(arr)):
+            current.next = Node(arr[i])
+            current = current.next
+
+        return head
+    
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode()
+        current = dummy
+        carry = 0
+        print(l1)
+        print(l2)
+        l1 = self.createLinkedList(l1)
+        l2 = self.createLinkedList(l2)
+        print(l1)
+        print(l2)
+
+        while l1 or l2 or carry:
+            val1 = l1.val if l1 else 0
+            val2 = l2.val if l2 else 0
+            total = val1 + val2 + carry
+            carry = total // 10
+            current.next = ListNode(total % 10)
+            current = current.next
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l2 else None
+
+        return dummy.next
+    
+l1 = [2,4,3]
+l2 = [5,6,4]
+# 342 + 465 = 807
+# [7,0,8]
+print(Solution().addTwoNumbers(l1, l2))
+
