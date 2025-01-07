@@ -50,3 +50,4 @@ target = 9
 #     for j in range(i+1, len(nums)):
 #         print(i, j)
 print(Solution().twoSum(nums, target))
+
