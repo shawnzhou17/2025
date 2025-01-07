@@ -53,3 +53,4 @@ class Solution:
     
 print(Solution().stringShift("abc",[[0,1],[1,2]]))  
 print(Solution().stringShift("abcdefg",[[1,1],[1,1],[0,2],[1,3]]))  
+76
