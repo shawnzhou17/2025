@@ -1,13 +1,6 @@
 # 2779. Maximum Beauty of an Array After Applying Operation
 # Medium
 
-# 999
-
-# 37
-
-# Add to List
-
-# Share
 # You are given a 0-indexed array nums and a non-negative integer k.
 
 # In one operation, you can do the following:
@@ -39,3 +32,26 @@
 # Output: 4
 # Explanation: In this example we don't have to apply any operations.
 # The beauty of the array nums is 4 (whole array).
+
+from typing import List
+
+
+# class Solution:
+#     def maximumBeauty(self, nums: List[int], k: int) -> int:
+#         nums.sort()
+#         for i in range(len(nums)):
+#             print(i)
+#         for i in range(0,len(nums)-1):
+#             print(i)
+        # return max(len(nums)-i for i in range(len(nums)) if nums[i]+k>=nums[-1])
+
+# print(Solution().maximumBeauty([4,6,1,2],2))
+# print(Solution().maximumBeauty([1,1,1,1],10))
+nums = [4,6,1,2]
+for i in range(len(nums)):
+    print(i)
+for i in range(0,3):
+    print(i)
+
+for i in range(0,len(nums)):
+    print(i)
