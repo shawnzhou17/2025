@@ -1,0 +1,85 @@
+Shawn Zhou
+Skills
+• Cloud: Azure (AKS, Service Bus, Key V ault, Blob Storage, API Management), AWS (EC2, S3, Lambda, SQS/SNS, RDS)
+• Frontend: React, Redux (Toolkit, Saga), MobX, Recoil, Material-UI, Tailwind CSS, Webpack, Vite, Jest, Cypress
+• Backend: C#, ASP .NET Core, GraphQL, OpenAPI, Microservices, CQRS, DDD, Clean Architecture
+• Database: Azure SQL, AWS Aurora, AWS Dynamodb, Redis, Entity Framework Core, Dapper
+• DevOps: Azure DevOps, Terraform, Docker, Kubernetes,CI/CD pipeline with yml
+• AI/ML: Azure OpenAI, Azure Cognitive Services
+• Monitoring: Application Insights, Azure Monitor
+• Security: OAuth2, OpenID Connect
+Work Experiences
+Company: Amergis (Formerly: Maxim Healthcare Group) Columbia. MD
+Project: TimeClock
+Job title: Software Development Engineer March 2021 to Present
+Description: Maxim Healthcare Group, headquartered in Columbia, MD, is a national healthcare services provider offering home
+healthcare, staffing, and workforce solutions. Working within a distributed system architecture managing 40+ microservices that
+handle end-to-end employee hiring processes.
+Key Achievements:
+• Architected event-driven microservices using Azure Service Bus, reducing system latency by 40%
+• Implemented distributed caching with Redis, improving application response time by 60%
+• Developed automated CI/CD pipelines reducing deployment time from hours to minutes
+• Led migration of legacy systems to cloud-native architecture using Azure Kubernetes Service
+Technical Leadership:
+• Distributed Systems Architecture
+- Designed event-driven microservices architecture using Azure Service Bus
+- Implemented Circuit Breaker patterns and retry mechanisms for system resilience
+- Built API gateway using Azure API Management for centralized request routing
+• Cloud Infrastructure & DevOps
+- Orchestrated containerized applications using Azure Kubernetes Service (AKS)
+- Managed secrets and certificates using Azure Key V ault
+- Implemented document management system using Azure Blob Storage
+- Created Infrastructure as Code using Terraform
+- Developed multi-stage CI/CD pipelines with automated testing and rollback
+• Modern Frontend Development
+- Built scalable React applications using Redux Toolkit and React Query
+- Implemented micro-frontend architecture for large-scale applications
+- Developed real-time features using SignalR
+- Created responsive UI using Material-UI and Tailwind CSS
+• AI/ML Integration
+- Integrated Azure OpenAI for automated document processing
+- Implemented intelligent candidate matching using Azure Cognitive Services
+- Enhanced search capabilities using AI-powered algorithms
+• Security & Compliance
+- Implemented Zero Trust security model
+- Managed application secrets using Azure Key V ault
+- Ensured HIPAA compliance in data handling
+- Developed a comprehensive audit logging system
+Company: Dsfederal Rockville. MD
+Project: ESGR O&M
+Job title: Full Stack .Net Developer Oct 2019 to Oct 2020
+Description: Dsfederal is a government contractor that combines industry-leading technical expertise with a broad understanding of
+client’s missions.
+Key Achievements:
+• Developed and maintained 3 web applications with 90% code coverage
+• Reduced API response time by 40% through optimized database queries
+• Implemented a secure authentication system protecting sensitive military data
+• Created a reusable component library reducing development time by 30%
+Technical Contributions:
+• API Development
+- Built RESTful APIs with comprehensive CRUD operations
+- Implemented CORS for cross-domain communication
+- Developed custom exception handling using Exception Filters
+- Created secure endpoints with JWT authentication
+- Documented APIs using Swagger/OpenAPI specification
+• Database & ORM
+- Implemented Code-First approach using Entity Framework Core
+- Designed efficient data models and relationships
+- Optimized LINQ queries for improved performance
+- Integrated LLBLGen Pro ORM for complex data operations
+- Created and maintained stored procedures
+• Testing & Quality
+- Wrote comprehensive unit tests
+- Performed API testing using Fiddler
+- Participated in code reviews
+- Maintained coding standards
+• Project Management
+- Participated in daily Scrum meetings
+- Used JIRA for task tracking
+- Collaborated with cross-functional teams
+- Followed Agile methodologies
+Education
+2017.9 -2019.5 2013.9 -2017.6 Master of Science with a Major in Business Analytics
+Hofstra University, Hempstead NY
+Bachelor of Engineering with a Major in Transportation Engineering
+Changsha University of Science & Technology ,Changsha China
