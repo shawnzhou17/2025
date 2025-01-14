@@ -1,0 +1,42 @@
+Security Groups vs Network ACLs:
+
+1. Security Groups:
+- Instance level firewall
+- Stateful (return traffic automatically allowed)
+- Can have different rules for instances in same subnet
+- All inbound traffic denied by default
+- All outbound traffic allowed by default
+
+2. Network ACLs:
+- Subnet level firewall
+- Stateless (return traffic needs explicit allow rules)
+- Applies to all instances in the subnet
+- All inbound and outbound traffic denied by default
+
+Example Use Case:
+When two EC2 instances in same subnet need different traffic rules:
+- Instance A: Allow HTTP (port 80)
+- Instance B: Allow HTTPS (port 443)
+→ Use Security Groups (not Network ACLs)
+
+
+
+
+Question:
+A solutions architect must secure the network traffic for two applications running on separate Amazon EC2 instances in the same subnet. The requirements are:
+Application A: Allow inbound HTTP requests, block all other inbound traffic
+Application B: Allow inbound HTTPS traffic, block all other inbound traffic (including HTTP)
+Answer: B - Configure the access with security groups
+Explanation:
+Security groups are the correct choice because:
+They act as a virtual firewall for EC2 instances
+They can control inbound and outbound traffic at the instance level
+They allow you to specify different rules for different instances in the same subnet
+You can create specific rules to:
+Allow HTTP (port 80) for Application A
+Allow HTTPS (port 443) for Application B
+Block all other traffic by default (security groups are stateful and deny all inbound traffic by default)
+Why other options are incorrect:
+Network ACLs (Option A): While they can filter traffic, they operate at the subnet level and cannot distinguish between instances in the same subnet
+VPC peering (Option C): This is for connecting different VPCs, not for controlling traffic within a subnet
+Route tables (Option D): These control traffic between subnets/networks, not for filtering traffic to specific instances

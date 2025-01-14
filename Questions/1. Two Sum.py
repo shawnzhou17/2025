@@ -29,25 +29,53 @@
 # -109 <= nums[i] <= 109
 # -109 <= target <= 109
 # Only one valid answer exists.
+
+
+def two_sum(nums, target):
+    for i in range(len(nums)):
+        for j in range(i+1,len(nums)):
+            if nums[i] + nums[j] == target:
+                return [nums[i],nums[j]]
+    return []
+
+
+
+# Test cases for the two_sum function
+print(two_sum([2, 7, 11, 15], 9))  # Expected output: [0, 1]
+print(two_sum([3, 2, 4], 6))       # Expected output: [1, 2]
+print(two_sum([3, 3], 6))          # Expected output: [0, 1]
+print(two_sum([1, 2, 3, 4, 5], 9)) # Expected output: [3, 4]
+print(two_sum([0, -1, 2, -3, 1], -2)) # Expected output: [1, 3]
+
+
+
+
+
+
+
+
+
+
+
  
 
-# Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
+# # Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
-from typing import List
+# from typing import List
 
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        for i in range(len(nums)):
-            for j in range(i+1, len(nums)):
-                if nums[i] + nums[j] == target:
-                    return [i, j]
+# class Solution:
+#     def twoSum(self, nums: List[int], target: int) -> List[int]:
+#         for i in range(len(nums)):
+#             for j in range(i+1, len(nums)):
+#                 if nums[i] + nums[j] == target:
+#                     return [i, j]
 
-nums = [2,1,7,11,15]
-target = 9
+# nums = [2,1,7,11,15]
+# target = 9
 
-# print(range(len(nums)))
-# for i in range(len(nums)):
-#     for j in range(i+1, len(nums)):
-#         print(i, j)
-print(Solution().twoSum(nums, target))
+# # print(range(len(nums)))
+# # for i in range(len(nums)):
+# #     for j in range(i+1, len(nums)):
+# #         print(i, j)
+# print(Solution().twoSum(nums, target))
 
